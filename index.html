@@ -4,23 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Page</title>
+        <link rel="stylesheet" href="./styles.css" ></style>
     </head>
     <body>
         <header>
             <h1>Vida's First GitHub Portfolio</h1>
         </header>
         <nav>
-            <p>Home</p>
-            <p>About Me</p>
-            <p>Projects</p>
-            <p>Contacts</p>
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
         <main>
             <section id="intro">
-                <h1>Vida Huimin Herling</h1>
-                <img src="./Family_photo.jpeg">
-                <p>bon polo bon polo bon polo bon polo bon polo bon polo bon polo bon polo </p>
+                <div class="row">
+                    <div class="column">
+                        <img src="./Family_photo.jpeg" alt="Family Bio Photo" style="width: 100%">
+                    </div>
+                    <div class="column">
+                        <h1>Vida Huimin Herling</h1>
+                        <p>bon polo bon polo bon polo bon polo bon polo bon polo bon polo bon polo </p>
+                    </div>
+                </div>
             </section>
+
             <section id="projects">
                 <h1>Project Showcases</h1>
                 <p><a href="https://vida0214.github.io/Pacman_Exercise/">Project 1</a></p>

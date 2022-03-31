@@ -1,3 +1,3 @@
 # First Github Portfolio Page
 
-This is the first github webpage I have made. I just started the programming journey with the MIT|XPro program. Excited and nervours!
+This is my first GitHub page. I am currently a Full Stack Programmer in Training, with the MIT XPro Professional Certificate in Coding program. 

@@ -1,3 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+
+html * {
+  line-height: 1.625;
+  font-family: Roboto, sans-serif;
+}
+
 /* The hero image */
 .hero-container {
   margin: 0;
@@ -20,6 +28,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  opacity: 100%;
+}
+
+.hero-image:hover {
+  opacity: 70%
 }
 
 .hero-text {
@@ -76,7 +89,8 @@ li a:hover {
 .homepage-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 10px;
+  column-gap: 20px;
+  row-gap: 10px;
 }
 
 header {
@@ -104,16 +118,32 @@ nav {
   grid-column: 1 / 4;
   grid-row: 5 / 6;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
+  row-gap: 20px;
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 100%;
-  border-radius: 10px;
-  padding: 10px;
+  padding: 30px;
+}
+
+.card > img {
+  border-radius: 40px;
+  opacity: 70%;
+}
+
+.card > img:hover {
+  border-radius: 20px;
+  opacity: 100%
+}
+
+.card > h3 {
+  font-family: Roboto;
+  text-align: center;
+  padding: 20px;
 }
 
 footer {
@@ -129,7 +159,7 @@ footer {
   height: 100%;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 300px 1fr 1fr;
+  grid-template-columns: 300px minmax(200px, 600px);
   column-gap: 20px;
   row-gap: 20px;
 }
@@ -155,6 +185,7 @@ footer {
 .text-1 {
   grid-column: 2 / 4;
   grid-row: 1 / 2;
+  
 }
 
 .text-2 {
@@ -167,6 +198,14 @@ footer {
   grid-row: 3 / 4;
 }
 
+.text-1, .text-2, .text-3 {
+  align-self: center;
+}
+
+.project-img {
+  border-radius: 20px;
+}
+
 /* about page styling*/
 .bio-container {
   margin: 10px;
@@ -176,7 +215,7 @@ footer {
   height: 100%;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 250px minmax(200px, 600px);
   gap: 30px;
 }
 
@@ -184,17 +223,21 @@ footer {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
   justify-self: center;
+  text-align: center;
 }
 
 .bio-text {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  grid-gap: 20px;
 }
 
 .bio-video {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  padding: 20px;
+  border-radius: 20px;
+  justify-self: left;
+  background: #5eace0;
 }
 
 /* footer styling*/
@@ -206,18 +249,20 @@ footer {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: #5eace0;
 }
 
 .footer-left {
   grid-column: 1 / 2;
-  align-self: center;
-  justify-content: center;
+  justify-self: right;
+}
 
+.footer-middle {
+  grid-column: 2 / 3;
+  justify-self: center;
 }
 
 .footer-right {
   grid-column: 3 / 4;
-  align-self: center;
-  justify-content: center;
-
+  justify-self: left;
 }

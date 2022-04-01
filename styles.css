@@ -36,7 +36,7 @@ html * {
 }
 
 .hero-text {
-  font-size: 20px;
+  font-size: 2vw;
   text-align: center;
   position: absolute;
   width: 20%;
@@ -266,4 +266,11 @@ footer {
 .footer-right {
   grid-column: 3 / 4;
   justify-self: left;
+}
+
+/* Need to figure out how to use a media query to make responsive webpage and mobile friendly */
+@media screen and (max-width: 600px) {
+  .homepage-grid, .project-grid, .bio-container {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
